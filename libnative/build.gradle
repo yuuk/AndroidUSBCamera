@@ -25,6 +25,8 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags ""
+                // 16K page size support for Android devices
+                arguments "-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON"
             }
             ndk{
                 abiFilters 'armeabi-v7a','arm64-v8a', "x86", "x86_64"
