@@ -70,7 +70,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.ernestp'
+                groupId = 'com.github.yuuk'
                 artifactId = 'libnative'
                 version = '3.4.5'
             }
